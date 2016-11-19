@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0202"
+    tools:context="edu.cmu.ict.cyborgshot.FullscreenActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:id="@+id/spinner" />
+
+
+        <TextView
+                android:text="TextView to show the status of the testing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_textView"
+                android:layout_weight="1" />
+
+        <Button
+                android:id="@+id/start_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:text="@string/start_button" />
+
+
+        <Button
+                android:id="@+id/dummy_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:text="@string/stop_button" />
+    </LinearLayout>
+
+</FrameLayout>
